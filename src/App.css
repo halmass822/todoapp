@@ -1,38 +1,72 @@
-.App {
+html {
+  font-size: 16px;  
+}
+
+#siteTitle {
+  font-size: 40px;
   text-align: center;
+  margin: 0 0 1.5rem 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  border: 2.5px solid black;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputSection {
   display: flex;
-  flex-direction: column;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: lightgray;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.inputs {
+  display: inline-flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+#inputTaskDescription {
+  height: 3rem;
+  resize: none;
+}
+
+.taskList {
+  display: flex;
+  flex-flow: column;
+  margin: 0.5rem 0;
+}
+
+.task {
+  background-color: #d9f7fa;
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem 0.75rem 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.taskTitle {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task h2 {
+  margin: 0.5rem 0.5rem 0 0;
+  word-wrap: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task button {
+  margin-right: 0.5rem;
+}
+
+.taskTitle {
+  font-size: 30px;
+}
+
+.taskDesc {
+  font-size: 16px;
 }
